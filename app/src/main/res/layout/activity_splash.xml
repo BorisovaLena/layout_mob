@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Congrats">
+    tools:context=".Splash">
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,47 +18,46 @@
         app:srcCompat="@drawable/photo" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/appName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.35"
-        android:text="Congrats!"
+        android:layout_marginTop="30dp"
+        android:text="App Name"
         android:textSize="30dp"
         android:textColor="@color/color"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="20dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur"
+        android:textSize="18dp"
+        android:textColor="@color/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName"/>
+
+    <TextView
+        android:id="@+id/text2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.5"
-        android:layout_marginTop="30dp"
-        android:text="Account Created Successfully"
-        android:textColor="@color/color"
         android:textSize="18dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <android.widget.Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
-        android:background="@drawable/color"
-        android:onClick="OnClick"
-        android:text="Get Started"
-        android:textColor="@color/white"
-        android:textSize="14dp"
+        android:textColor="@color/color"
+        android:layout_marginBottom="100dp"
+        android:text="Product of Team Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent="0.5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
